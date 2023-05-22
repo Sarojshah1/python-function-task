@@ -1,9 +1,15 @@
-# 34. Use else block to display a message “Done” after successful execution of while loop.
-def q34():
-    i = 1
-    while i < 3:
-        print(i)
-        i += 1
+def fun():
+    lst1 = [111, 32, -9, -45, -17, 9, 85, -10]
+    lst2 = []
+    for i in range(0, len(lst1)):
+        if (lst1[i] >= 0):
+            lst2.append(lst1[i])
+        else:
+            continue
     else:
         print("Done!")
-q34()
+
+    print(lst2)
+
+
+fun()

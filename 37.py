@@ -1,15 +1,16 @@
-# 37. Python program to count the number of even and odd numbers from a series of numbers.
-List = [1,2,3,4,5,6,7,8,9]
-def q37(list):
-    totalOdds = 0
-    totalEven = 0
-    i = 0
-    while i < len(List):
-        if List[i] % 2 == 0:
-            totalEven += 1
+def fun():
+    num_list = [2, 5, 7, 8, 10, 13, 15, 16]
+    even_count = 0
+    odd_count = 0
+
+    for num in num_list:
+        if num % 2 == 0:
+            even_count += 1
         else:
-            totalOdds += 1
-        i += 1
-    print(f"Total Even Numbers: {totalEven}")
-    print(f"Total Odd Numbers: {totalOdds}")
-q37(list)
+            odd_count += 1
+
+    print("Number of even numbers:", even_count)
+    print("Number of odd numbers:", odd_count)
+
+
+fun()

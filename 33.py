@@ -1,10 +1,13 @@
-# 33. Write a for loop which appends the type of each element in the first list to the second list.
-list = eval(input("Enter the elements: "))
-def q33(list):
-    typeList = []
-    i = 0
-    while i < len(list):
-        typeList.append(type(list[i]))
-        i += 1
-    print(typeList)
-q33(list)
+def fun():
+    lst1 = [1, True, 4.78, "Ram"]
+    lst2 = [False, True, 0]
+    lst3 = []
+    for i in range(0, len(lst1)):
+        lst3.append(type(lst1[i]))
+    for i in range(0, len(lst2)):
+        lst3.append(type(lst2[i]))
+
+    print(lst3)
+
+
+fun()

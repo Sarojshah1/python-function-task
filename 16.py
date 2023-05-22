@@ -1,14 +1,19 @@
-# 16. Python program to check whether a number is armstrong or not.
-def q16():
-    num = input("Enter the number: ")
+def fun():
+    num = int(input("Enter a number: "))
     sum = 0
-    a = len(num)
-    i = 0
-    while i < a:
-        sum += int(num[i])**a
-        i += 1
-    if sum == num:
-        print(f"The entered number {num}, is an armstrong number!")
+    temp = num
+
+    num_digits = len(str(num))
+
+    while temp > 0:
+        digit = temp % 10
+        sum += digit ** num_digits
+        temp //= 10
+
+    if num == sum:
+        print(num, "is an Armstrong number")
     else:
-        print(f"The entered number {num}, is not an armstrong number!")
-q16()
+        print(num, "is not an Armstrong number")
+
+
+fun()

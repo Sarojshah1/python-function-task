@@ -1,14 +1,15 @@
-# 18. Python program to check a number is perfect number
-num = int(input("Enter the number: "))
-def q18(NUMBER):
+def fun():
+    num = int(input("Enter a number: "))
+
     sum = 0
-    i = 1
-    while i < num:
-        i += 1
+    for i in range(1, num):
         if num % i == 0:
             sum += i
+
     if sum == num:
-        print(f"The entered number {num} is a perfect number..")
+        print(num, "is a perfect number")
     else:
-        print(f"The entered number {num} is not a perfect number..")
-q18(num)
+        print(num, "is not a perfect number")
+
+
+fun()

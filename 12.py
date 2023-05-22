@@ -1,17 +1,14 @@
-# 12. Python program to check the validity of username and password input by users.
-username = input("Enter your username: ")
-password = input("Enter your new password: ")
-def check_username(username,password):
-    i = 0
-    while i < 4:
-        confirm_password = input("Confirm Your Password: ")
-        if confirm_password == password:
-            print("Account Successfully Created.")
+def fun():
+    for i in range(3):
+        userName, password = input("Enter Username:"), input("Enter Password:")
+        if userName == 'username' and password == 'password':
+            print('Access Granted')
             break
+        elif i == 2:
+            print("Account Blocked")
         else:
-            print(f"Password didn't match! {3-i} attempts left...")
-        if (3-i) < 1:
-            print("You are blocked!")
-        i += 1
-check_username(username, password)
+            print(
+                f"Invalid Username or Password,Tried:{i+1} Remaning:{3-(i+1)}")
 
+
+fun()

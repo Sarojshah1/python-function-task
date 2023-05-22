@@ -1,12 +1,16 @@
-# 22. Python program to calculate the sum of all the even numbers within the given range.
-start = int(input("Enter the starting point: "))
-end = int(input("Enter the ending point: "))
-def q22(start,end):
-    i = start
+def fun():
+    range_value = input('Enter: ')
+    ary = []
     sum = 0
-    while i <= end:
-        if i % 2 == 0:
-            sum += i
-        i += 1
-    print(f"The sum of even numbers within the given range is: {sum}")
-q22(start, end)
+
+    for i in range(1, int(range_value)):
+        if (i % 2 != 0):
+            ary.append(i)
+
+    for j in range(0, len(ary)):
+        sum += ary[j]
+
+    print(sum)
+
+
+fun()
